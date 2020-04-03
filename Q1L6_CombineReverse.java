@@ -30,16 +30,16 @@ import java.util.Scanner;
 public class Q1L6_CombineReverse
 {
 	public static void main(String[] args)
-	{
+	{	//Step 1:
 		Scanner scan = new Scanner(System.in);
 		int input = scan.nextInt();
 		
 		if(input < 0)
-		{
+		{	//Step 2:
 			System.out.println("Not a valid entry!");
 		}
 		else
-		{
+		{	//Step 3 & 4:
 			System.out.println(combine(input));
 		}
 	}	//End main
@@ -47,12 +47,12 @@ public class Q1L6_CombineReverse
 	
 	public static String combine(int input)
 	{
-		String s = "" + input;	//Convert int to String
-		String[] a = s.split("");	//Split the String into individual characters and pass to an array
+		String s = "" + input;	//A)
+		String[] a = s.split("");	//B)
 		for(int i = a.length - 1; 1 >= 0; i--)
-		{
+		{	//C)
 			s += a[i];
 		}
-		return s;
+		return s;	//D)
 	}	//End combine()
 }	//End class
